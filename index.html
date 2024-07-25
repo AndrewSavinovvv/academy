@@ -7,149 +7,39 @@
     <title>Academy</title>
   </head>
   <body>
-    <div class="main__container">
-      <header class="header">
+    <header class="header">
+      <nav class="header__nav">
         <img class="header__logo" src="/img/logo.svg" alt="Academy Logo" />
-        <button class="burger-menu" aria-label="Toggle menu">
-          <span class="burger-menu__line"></span>
-          <span class="burger-menu__line"></span>
-          <span class="burger-menu__line"></span>
-        </button>
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li>
-              <a href="#"><img src="/img/все.svg" alt="" />Все курсы</a>
-            </li>
-            <li><a href="#">Мероприятия</a></li>
-            <li><a href="#">Базы знаний</a></li>
-            <li><a href="#">Карьера</a></li>
-            <li>
-              <a href="#"><img src="/img/geo.svg" alt="" />Нижний Новгород</a>
-            </li>
-            <li><a href="tel:88009503398">8 800 950 33 98</a></li>
-            <li>
-              <button class="header__btn">
-                <img src="/img/вход.svg" alt="" />Войти
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="block">
-        <div class="block__text">
-          <span>Образовательная платформа</span>
-          <h2>ХОД Future Academy</h2>
-          <h4>Актуальные знания для новичков и профессионалов</h4>
+        <div class="header__burger-menu" onclick="toggleMenu()">
+          <div class="header__burger-bar"></div>
+          <div class="header__burger-bar"></div>
+          <div class="header__burger-bar"></div>
         </div>
-        <div class="block__image"></div>
-      </div>
-      <div class="blocks__item">
-        <div class="block-item">
-          <img src="/img/крест.svg" alt="" class="block-item__image" />
-          <p class="block-item__text">
-            <span>Мы создали Академию</span> для взрослых, чтобы у них была
-            возможность начать с читатого листа и создать лучшую версию себя в
-            любом возрасте.а
-          </p>
-        </div>
-        <div class="block-item">
-          <img src="/img/круг.svg" alt="" class="block-item__image" />
-          <p class="block-item__text">
-            <span>Мы создали Академию</span> для подростков, чтобы «Кем я хочу
-            стать?» больше не был самым сложным вопросом.
-          </p>
-        </div>
-        <div class="block-item">
-          <img src="/img/треугольни.svg" alt="" class="block-item__image" />
-          <p class="block-item__text">
-            <span>Мы создали Академию</span> для детей, чтобы компьютер был не
-            зависимостью и игрушкой, а другом на пути обучения и развития.
-          </p>
-        </div>
-      </div>
-      <div class="block__big-img">
-        <img src="./img/big-img.svg" alt="" />
-      </div>
-      <div class="block__container">
-        <div class="block__top">
-          <div class="block__persona-img">
-            <img src="./img/persona.svg" alt="" />
-            <h4>Имя Фамилия</h4>
-            <h6>Основатель Академии будущего ХОД</h6>
-          </div>
-          <div class="block__persona-info">
-            <span
-              >«Все началось с любви к шахматам. Я хотел предвидеть ход
-              противника, хотел просчитать его действия, хотел побеждать. Я не
-              стал гением шахмат, но стратег и психолог из меня неплохой» -
-              смеется Иван Иванович. Идея открыть Академию шахмат пришла к нему
-              в 2020 году, когда в период полного локдауна он вдруг вспомнил про
-              хобби - игру в шахматы. Оказалось, что для игры в шахматы сейчас и
-              доска-то не обязательна, все есть в телефоне. Племянник (сын?)
-              Ивана Ивановича большую часть дня проводил в стрелялках на
-              планшете. «Я показал ему шахматы. К июню он уже был неплохим
-              соперником» - Вскоре идея небольшой академии шахмат превратилась в
-              план создания Академии Будущего, где дети смогут учиться тому, что
-              им нравится, а взрослые попытаются изменить жизнь. Уж очень это
-              сейчас актуально".
-            </span>
-            <p>Из интервью с основателем Академии Будущего Ивановым И.И.</p>
-          </div>
-        </div>
-        <div class="block__bottom">
-          <div class="block__values-title">
-            <h1>Наши ценности</h1>
-          </div>
-          <div class="block__values-blocks">
-            <div class="block__values-info">
-              <img src="./img/value.svg" alt="" />
-              <span
-                >Содержание обучения должно быть актуальным, а методика
-                проверенная годами.</span
-              >
-            </div>
-            <div class="block__values-info">
-              <img src="./img/value.svg" alt="" />
-              <span
-                >Содержание обучения должно быть актуальным, а методика
-                проверенная годами.</span
-              >
-            </div>
-            <div class="block__values-info">
-              <img src="./img/value.svg" alt="" />
-              <span
-                >Содержание обучения должно быть актуальным, а методика
-                проверенная годами.</span
-              >
-            </div>
-            <div class="block__values-info">
-              <img src="./img/value.svg" alt="" />
-              <span
-                >Содержание обучения должно быть актуальным, а методика
-                проверенная годами.</span
-              >
-            </div>
-            <div class="block__values-info">
-              <img src="./img/value.svg" alt="" />
-              <span
-                >Содержание обучения должно быть актуальным, а методика
-                проверенная годами.</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        <ul class="header__list">
+          <li><img src="/img/все.svg" alt="" />Все курсы</li>
+          <li>Мероприятия</li>
+          <li>Базы знаний</li>
+          <li>Карьера</li>
+          <li>
+            <a href="#"
+              ><img src="/img/geo.svg" alt="" />Нижний Новгород
+              <img src="./img/down.svg" alt=""
+            /></a>
+          </li>
+          <li>8 800 950 33 98</li>
+          <li>
+            <button class="header__btn">
+              <img src="/img/вход.svg" alt="" />Войти
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>
-
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const burgerMenu = document.querySelector(".burger-menu");
-    const nav = document.querySelector(".header__nav");
-
-    burgerMenu.addEventListener("click", function () {
-      nav.classList.toggle("active");
-    });
-  });
+  function toggleMenu() {
+    const menu = document.querySelector(".header__list");
+    menu.classList.toggle("active");
+  }
 </script>
