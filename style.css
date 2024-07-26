@@ -72,8 +72,11 @@ a {
   background-color: black;
   margin: 3px 0;
 }
+.header__burger-bar:nth-child(2) {
+  width: 20px;
+  margin-left: 5px;
+}
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
   .header__list {
     display: none;
@@ -103,4 +106,37 @@ a {
     align-items: center;
     position: relative;
   }
+}
+.section-content {
+}
+
+.container {
+  display: flex;
+}
+
+.block {
+  padding: 20px;
+}
+
+.block__left {
+  background-color: #000080;
+  color: #ffffff;
+  width: 50%;
+  height: 400px;
+}
+
+.block__left-text {
+  display: flex;
+}
+
+.block__right {
+  width: 50%;
+}
+
+.block__right {
+  height: 400px;
+  background-image: url("/img/devka.svg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 }
