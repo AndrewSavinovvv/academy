@@ -7,13 +7,13 @@ body {
 
 .header {
   padding: 20px;
+  position: relative;
 }
 
 .header__nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .header__logo {
@@ -28,6 +28,9 @@ body {
   padding: 0;
   margin: 0;
   color: #000000;
+}
+.header__list :nth-child(5) {
+  padding-left: 40px;
 }
 
 .header__list li {
@@ -85,8 +88,12 @@ a {
     top: 100%;
     padding: 20px;
     margin: 0;
+    z-index: 999;
+    background-color: white;
   }
-
+  .header__list :nth-child(5) {
+    padding-left: 0;
+  }
   .header__list.active {
     display: flex;
     align-items: flex-start;
@@ -107,15 +114,9 @@ a {
     position: relative;
   }
 }
-.section-content {
-}
-
-.container {
-  display: flex;
-}
 
 .block {
-  padding: 20px;
+  display: flex;
 }
 
 .block__left {
