@@ -8,47 +8,52 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__nav">
-        <img class="header__logo" src="/img/logo.svg" alt="Academy Logo" />
-        <div class="header__burger-menu" onclick="toggleMenu()">
-          <div class="header__burger-bar"></div>
-          <div class="header__burger-bar"></div>
-          <div class="header__burger-bar"></div>
+      <div class="container">
+        <div class="header__container">
+          <img class="header__logo" src="/img/logo.svg" alt="Academy Logo" />
+          <div class="header__burger-menu" onclick="toggleMenu()">
+            <div class="header__burger-bar"></div>
+            <div class="header__burger-bar"></div>
+            <div class="header__burger-bar"></div>
+          </div>
+          <ul class="header__list">
+            <li><img src="/img/все.svg" alt="" />Все курсы</li>
+            <li>Мероприятия</li>
+            <li>Базы знаний</li>
+            <li>Карьера</li>
+            <li>
+              <a href="#">
+                <img src="/img/geo.svg" alt="" />Нижний Новгород
+                <img src="./img/down.svg" alt="" />
+              </a>
+            </li>
+            <li>8 800 950 33 98</li>
+            <li>
+              <button class="header__btn">
+                <img src="/img/вход.svg" alt="" />Войти
+              </button>
+            </li>
+          </ul>
         </div>
-        <ul class="header__list">
-          <li><img src="/img/все.svg" alt="" />Все курсы</li>
-          <li>Мероприятия</li>
-          <li>Базы знаний</li>
-          <li>Карьера</li>
-          <li>
-            <a href="#"
-              ><img src="/img/geo.svg" alt="" />Нижний Новгород
-              <img src="./img/down.svg" alt=""
-            /></a>
-          </li>
-          <li>8 800 950 33 98</li>
-          <li>
-            <button class="header__btn">
-              <img src="/img/вход.svg" alt="" />Войти
-            </button>
-          </li>
-        </ul>
-      </nav>
+      </div>
     </header>
     <section class="section__content">
-      <div class="block">
-        <div class="block__left">
-          <div class="block__left-text">
-            <p>Образовательная платформа</p>
-            <p>ХОД Future Academy</p>
-            <p>Актуальные знания для новичков и профессионалов</p>
+      <div class="container">
+        <div class="block">
+          <div class="block__left">
+            <div class="block__left-text">
+              <p>Образовательная платформа</p>
+              <p>ХОД Future Academy</p>
+              <p>Актуальные знания для новичков и профессионалов</p>
+            </div>
           </div>
+          <div class="block__right"></div>
         </div>
-        <div class="block__right"></div>
       </div>
     </section>
   </body>
 </html>
+
 <script>
   function toggleMenu() {
     const menu = document.querySelector(".header__list");
