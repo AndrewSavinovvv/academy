@@ -41,8 +41,9 @@ body {
 
 .header__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Распределение элементов с максимальным пространством между ними */
   align-items: center;
+  width: 100%; /* Убедитесь, что контейнер занимает всю доступную ширину */
 }
 
 .header__logo {
@@ -95,7 +96,7 @@ a {
 }
 
 .header__burger-menu {
-  display: none;
+  display: none; /* Скрыто по умолчанию, отображается на мобильных устройствах */
   flex-direction: column;
   cursor: pointer;
 }
