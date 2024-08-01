@@ -39,13 +39,6 @@ body {
   position: relative;
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between; /* Распределение элементов с максимальным пространством между ними */
-  align-items: center;
-  width: 100%; /* Убедитесь, что контейнер занимает всю доступную ширину */
-}
-
 .header__logo {
   width: 100px;
   height: 70px;
@@ -174,6 +167,7 @@ a {
     flex-direction: column;
     position: absolute;
     top: 100%;
+    left: 0;
     z-index: 999;
     background-color: white;
   }
@@ -248,12 +242,103 @@ a {
 
 .info__left img {
   position: absolute;
-  /* bottom: 0; */
+  top: 100%;
   left: 0;
   width: 168px;
   height: 188px;
 }
-
 .info__right {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 40px;
+}
+
+.info__right > .flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.info__right > .flex::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #ccc;
+  z-index: 1;
+}
+
+.info__separator {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.info__right-perlonal {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.info__right-perlonal::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: transparent;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+
+.info__right-perlonal:hover::before {
+  background-color: #f7941d;
+}
+
+.info__right-perlonal .flex {
+  display: flex;
+  align-items: center;
+}
+
+.info__right-perlonal img {
+  margin-right: 10px;
+}
+
+.info__right-perlonal h4 {
+  margin: 0;
+}
+
+.info__right-perlonal span {
+  margin-left: 10px;
+}
+
+.info__right-profession ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info__right-profession ul li {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: red solid 1px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info__right-profession li a {
+  text-decoration: none;
 }
