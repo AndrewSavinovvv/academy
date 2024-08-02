@@ -337,15 +337,15 @@ a {
   .block__left-text p:nth-child(3) {
     font-size: 16px;
   }
-  .info {
+  .flex {
     display: flex;
     flex-direction: column;
   }
 
   .info__left {
     padding: 12px;
-
     position: relative;
+    height: auto;
   }
 
   .info__left img {
@@ -357,6 +357,9 @@ a {
   .info__left p {
     font-size: 14px;
     line-height: 20px;
+  }
+  .info__right-perlonal {
+    padding-top: 80px;
   }
 }
 
